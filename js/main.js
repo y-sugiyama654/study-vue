@@ -10,6 +10,7 @@ new Vue({
 
             var todo = {
                 item: this.newItem,
+                isDone: false,
             };
 
             this.todos.push(todo);
