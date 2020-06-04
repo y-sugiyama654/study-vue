@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Class Bind</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="app">
+
+    <!-- フォーム入力バインディングの基本 -->
+    <!--　<p>{{ message }}</p>　-->
+    <!--　<input type="text" v-model="message">　-->
+
+    <!-- v-model利用時は属性は無視される -->
+    <!-- <p>{{ message }}</p> -->
+    <!-- <input type="text" v-model="message" value="hoge"> -->
+
+    <!-- 複数行テキスト -->
+    <!-- <pre>{{ message }}</pre> -->
+    <!-- <textarea v-model="message"></textarea> -->
+
+    <!-- チェックボックス 単体 -->
+    <!-- <input type="checkbox" id="checkbox" v-model="checked"> -->
+    <!-- <label for="checkbox">{{ checked }}</label> -->
+
+    <!-- チェックボックス 複数 -->
+    <!-- <input type="checkbox" id="red" value="Red" v-model="colors"> -->
+    <!-- <label for="red">Red</label> -->
+    <!-- <input type="checkbox" id="blue" value="Blue" v-model="colors"> -->
+    <!-- <label for="red">Blue</label> -->
+    <!-- <input type="checkbox" id="green" value="Green" v-model="colors"> -->
+    <!-- <label for="red">Green</label> -->
+    <!-- <p>{{ colors }}</p> -->
+
+    <!-- ラジオボタン -->
+    <!-- <input type="radio" id="red" value="Red" v-model="color"> -->
+    <!-- <label for="red">Red</label> -->
+    <!-- <input type="radio" id="green" value="Green" v-model="color"> -->
+    <!-- <label for="green">Green</label> -->
+    <!-- <input type="radio" id="blue" value="Blue" v-model="color"> -->
+    <!-- <label for="blue">Blue</label> -->
+    <!-- <pre>{{ color }}</pre> -->
+
+    <!-- セレクトボックス 単体 -->
+    <!-- <select v-model="selected"> -->
+        <!-- <option disabled>Please selected one</option> -->
+        <!-- <option>Red</option> -->
+        <!-- <option>Green</option> -->
+        <!-- <option>Blue</option> -->
+    <!-- </select> -->
+    <!-- <p>{{ selected }}</p> -->
+
+    <!-- セレクトボックス 複数 -->
+    <!--　<select v-model="multiple" multiple> -->
+        <!--　<option disabled>Please select one</option> -->
+        <!--　<option>Red</option> -->
+        <!--　<option>Green</option> -->
+        <!--　<option>Blue</option> -->
+    <!--　</select> -->
+    <!--　<p>{{ multiple }}</p> -->
+
+    <!-- 修飾子 .lazy -->
+    <!-- <p>{{ message }}</p> -->
+    <!-- <input type="text" v-model.lazy="message"> -->
+
+    <!-- 修飾子 .trim -->
+    <!-- <p><input type="text" v-model.trim="message"></p> -->
+    <!-- <p><input type="text" v-model="message"></p> -->
+    <!-- <p>{{ message }}</p> -->
+
+    <!-- 修飾子 .number -->
+    <input type="number" v-model.number="age">
+    <p>{{ age + 10 }}</p>
+    <p>{{ age + 10 }}</p>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

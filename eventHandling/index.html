@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Class Bind</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="app">
+
+    <!-- インラインメソッドハンドラ -->
+    <!-- {{ counter }} -->
+    <!-- <button v-on:click="counter++" />Click! -->
+
+    <!-- インラインメソッドハンドラ(メソッドの使用) -->
+    <!-- {{ counter }} -->
+    <!-- <button v-on:click="clickHandler()" />Click! -->
+
+    <!-- イベントオブジェクトの参照 -->
+    <!-- {{ counter }} -->
+    <!-- <button v-on:click="clickHandler" />Click! -->
+
+    <!-- イベントハンドラに引数を渡す -->
+    <!-- {{ message }} -->
+    <!-- <button v-on:click="clickHandler('Vue.js')" />Click! -->
+
+    <!-- $event -->
+    <!-- {{ message }} -->
+    <!-- <button v-on:click="clickHandler($event, 'Vue.js')" />Click! -->
+
+    <!-- イベント修飾子の使用例.once -->
+    <!-- <button v-on:click.once="clickHandler">Now!</button> -->
+    <!-- <p>{{ message }}</p>-->
+
+    <!-- キー修飾子 -->
+    <!-- <input type="text" v-on:keyup.esc.space.up="clear" v-model="message"> -->
+    <!-- <p>{{ message }}</p> -->
+
+    <!-- システム修飾子1 -->
+    <!-- <input type="text" v-on:keyup.ctrl.67="clear" v-model="message"> -->
+    <!-- <p>{{ message }}</p> -->
+
+    <!-- システム修飾子2 -->
+    <!-- <div v-on:click.shift="clickHandler">Click me!</div> -->
+
+    <!-- v-on省略記法 -->
+    <button @click="clickHandler">ボタン</button>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
