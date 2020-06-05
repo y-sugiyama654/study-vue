@@ -6,9 +6,10 @@ const router = new VueRouter({
     routes: [
         {
             path: '/a',
-            redirect: '/b'
+            redirect: { name: 'page-b' }
         },
         {
+            name: 'page-b',
             path: '/b',
             component: B
         }
